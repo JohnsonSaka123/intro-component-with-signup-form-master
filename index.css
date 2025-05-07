@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Poppins",
+    sans-serif;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(0, 100%, 74%);
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: 4rem;
+}
+.intro-section{
+  padding-top: 5rem;
+}
+.intro-section .title{
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.intro-section .description{
+  color: white;
+  font-weight: 300;
+  font-style: normal;
+}
+.form-section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 1000px;
+  max-width: 100%;
+}
+.form-section .trial{
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  padding: 0.625rem;
+  border-radius: 5px;
+  /*box-shadow: ;*/
+}
+.trial  p span{
+  color: white;
+  font-weight: 600;
+}
+.trial p{
+  text-align: center;
+  font-size: 0.625rem;
+}
+.form-wrapper{
+  background-color: white;
+  padding: 1.8rem 1.8rem;
+  border-radius: 5px;
+}
+.claim-trial_form{
+  width: 100%;
+}
+input{
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.438rem  0.5rem;
+  border: 1px solid hsl(246, 25%, 77%) ;
+  border-radius: 0.188rem;
+}
+input::placeholder{
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-style: normal;
+}
+.claim-btn{
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+.tnc{
+  text-align: center;
+  font-size: 0.6rem;
+  margin-top: 1rem;
+}
+
+@media (max-width : 768px){
+  main{
+    flex-direction: column;
+    margin: 1rem 1.5rem 2rem;
+    gap: 2.5rem;
+  }
+  .intro-section{
+    padding-top: 4rem;
+  }
+  .intro-section .title{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .intro-section .description{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+  .form-section{
+    max-width: 300px;
+    width: 100%;
+  }
+  .trial p{
+    font-size: 1rem;
+  }
+  input{
+    padding: 1rem 0.9rem;
+  }
+  input::placeholder{
+    font-size: 0.85rem;
+    font-family: "Poppins";
+  }
+  .tnc{
+    color: hsl(249, 10%, 26%);
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+  .tnc a{
+    color: hsl(0, 100%, 74%);
+  }
+  .claim-btn{
+    font-size: 0.8rem;
+  }
+}
