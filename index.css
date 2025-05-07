@@ -70,7 +70,7 @@ main{
 input{
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding: 0.438rem  0.5rem;
   border: 1px solid hsl(246, 25%, 77%) ;
   border-radius: 0.188rem;
@@ -95,6 +95,23 @@ input::placeholder{
   text-align: center;
   font-size: 0.6rem;
   margin-top: 1rem;
+}
+input.error {
+  border: 2px solid hsl(0, 100%, 74%);
+  background-image: url('./images/icon-error.svg');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+}
+
+.error-msg {
+  color: hsl(0, 100%, 74%);
+  font-size: 0.6rem;
+  font-style: italic;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  display: block;
+  text-align: right;
 }
 
 @media (max-width : 768px){
